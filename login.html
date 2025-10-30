@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Iniciar sesión - Carrera Ducati</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+        <div class="brand">
+			<img src="imagenes/logo-marcas.png" alt="Ducati Logo" class="logo">
+	    </div>
+    </header>
+
+    <main class="container">
+      <div class="promo-row">
+        <div class="promo">
+			<img src="imagenes/login-img@2x.png" alt="promo">
+		</div>
+      </div>
+
+      <section class="login-card">
+        <h2 class="card-title">INICIO DE SESIÓN</h2>
+        <form id="loginForm" class="login-form" novalidate>
+          <input class="input" type="email" name="email" placeholder="Correo electrónico" required>
+
+          <div class="input password-wrap">
+            <input id="password" type="password" name="password" placeholder="Contraseña" required>
+          </div>
+
+          <a class="forgot" href="#">Recupera tu contraseña</a>
+
+          <button class="btn-login" type="submit">INGRESAR</button>
+        </form>
+
+        <hr class="divider">
+
+        <p class="signup">¿Aún no tienes una cuenta? <a href="register.html">Regístrate</a></p>
+
+        <div class="footer-stripes" aria-hidden="true"><span></span><span></span><span></span></div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
