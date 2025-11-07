@@ -1,0 +1,57 @@
+<div class="container-fluid p-0">
+  <header class="site-header py-3">
+    <div class="container d-flex justify-content-center">
+      <div class="brand">
+        <img src="src/assets/imagenes/logo-marcas.png" alt="Ducati Logo" class="logo" height="40">
+      </div>
+    </div>
+  </header>
+
+  <main class="container my-4">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8 col-lg-6">
+        <div class="promo-row mb-3">
+          <div class="promo rounded overflow-hidden">
+            <img src="src\imagenes\login-img@2x.png" alt="promo" class="img-fluid">
+          </div>
+        </div>
+
+        <section class="login-card bg-white rounded p-4">
+          <h2 class="card-title text-center mb-3">INICIO DE SESIÓN</h2>
+          <h1>Login</h1>
+
+          <form (ngSubmit)="onSubmit()" #loginForm="ngForm" novalidate>
+            <div class="mb-3">
+              <input class="form-control" type="email" name="email" [(ngModel)]="email" placeholder="Correo electrónico" required>
+            </div>
+
+            <div class="mb-3 position-relative">
+              <input id="password" type="password" name="password" [(ngModel)]="password" class="form-control" placeholder="Contraseña" required>
+            </div>
+
+            <div class="mb-3 text-end">
+              <a class="forgot" href="#">Recupera tu contraseña</a>
+            </div>
+
+            <button class="btn btn-login w-100 py-2" type="submit" [disabled]="!loginForm.form.valid">
+              INGRESAR
+            </button>
+          </form>
+
+          <hr class="my-4">
+
+          <p class="signup text-center text-muted">
+            ¿Aún no tienes una cuenta?
+            <a routerLink="/register">Regístrate</a>
+          </p>
+
+          <div class="footer-stripes d-flex justify-content-center mt-3">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+</div>

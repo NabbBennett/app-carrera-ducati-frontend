@@ -1,0 +1,56 @@
+body {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  color: #111;
+}
+
+.site-header {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.promo {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.login-card {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.form-control:focus {
+  border-color: #d21b1b;
+  box-shadow: 0 0 0 0.25rem rgba(210, 27, 27, 0.25);
+}
+
+.btn-login {
+  background: #d21b1b;
+  color: #fff;
+  font-weight: 800;
+
+  &:hover {
+    opacity: 0.95;
+    background: #d21b1b;
+    color: #fff;
+  }
+}
+
+.forgot {
+  color: #d21b1b;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.signup a {
+  color: #d21b1b;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.footer-stripes span {
+  display: inline-block;
+  width: 28px;
+  height: 8px;
+  background: #d21b1b;
+  margin: 0 2px;
+}
+
+:host { display:block; padding:1rem; }
